@@ -145,3 +145,22 @@ button{
     border-radius: 30px;
     width: 80px;
 }
+
+/* MAIN */
+.main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.tricks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.projects{
+    width: 300px;
+    height: 100px;
+    padding: 1.5rem;
+    background-color: aliceblue;
+}
