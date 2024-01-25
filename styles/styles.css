@@ -123,13 +123,13 @@ input[type="text"]{
 }
 
 .profile-mini{
-    border-radius: 10px;
-    width: 50px;
+    border-radius: 999px;
+    width: 40px;
 }
 
 .profile-big{
-    border-radius: 20px;
-    width: 100px;
+    border-radius: 999px;
+    width: 80px;
 }
 
 .headerbtns{
@@ -183,7 +183,6 @@ button{
 
 .share{
     justify-self: end;
-    
 }
 
 .share img{
@@ -235,6 +234,7 @@ button{
 }
 
 .username{
+    align-self: flex-end;
     font-size: 0.8rem;
 }
 
@@ -242,5 +242,17 @@ button{
     margin-top: 2px;
     font-size: 0.6rem;
     color: gray;
+}
+
+.users{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 1em;
+}
+
+.users img{
+    grid-row: 1 / 3;
+    width: 40px;
+    border-radius: 999px;
 }
 
