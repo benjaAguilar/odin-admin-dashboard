@@ -28,7 +28,7 @@
 }
 
 .header{
-    background-color: beige;
+    background-color: #fb923c;
     grid-column: 2 / 3; 
 }
 
@@ -43,7 +43,7 @@
 }
 
 .main{
-    background-color: white;
+    background-color: #cbd5e1;
     grid-column: 2 / -1;
 }
 
@@ -96,11 +96,14 @@
     align-items: center;
     font-family: ubuntu;
     padding: 1em;
+    box-shadow: 0px 0px 5px black;
+    z-index: 0;
+    color: #1e293b;
 }
 
 input[type="text"]{
     grid-column: 2 / 5;
-    background-color: #ccc;
+    background-color: aliceblue;
     border-radius: 20px;
     border: none;
     padding: 3px;
@@ -128,7 +131,7 @@ input[type="text"]{
 .cheers{
     grid-column: 1 / 4;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
     margin-left: 20px;
 }
@@ -162,9 +165,20 @@ input[type="text"]{
 }
 
 button{
-    padding: 5px;
+    padding: 10px;
     border-radius: 30px;
     width: 80px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    font-family: ubuntu-bold;
+    border: none;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: #1e293b;
+    transition: 300ms all;
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -174,14 +188,14 @@ button{
     grid-template-rows: 20px 1fr 1fr;
     padding: 1em;
     font-family: ubuntu;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .tricks{
     grid-row: 2 / 4;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .projects{
@@ -191,7 +205,7 @@ button{
     width: 300px;
     height: 150px;
     padding: 1.5rem;
-    background-color: aliceblue;
+    background-color: #f1f5f9;
     border-radius: 5px;
     border-left: 6px solid orange;
     box-shadow: 3px 3px 10px #ccc;
@@ -211,9 +225,15 @@ button{
     margin-left: 1em;
 }
 
+.share img:hover{
+    width: 23px;
+    cursor: pointer;
+    transition: 200ms all;
+}
+
 .announcements2{
     padding: 1.5rem;
-    background-color: aliceblue;
+    background-color: #f1f5f9;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #ccc;
 }
@@ -245,7 +265,7 @@ button{
 
 .trending2{
     padding: 1.5rem;
-    background-color: aliceblue;
+    background-color: #f1f5f9;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #ccc;
 }
